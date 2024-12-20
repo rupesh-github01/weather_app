@@ -1,0 +1,351 @@
+*{
+    background-color: #fff;
+    font-size:1.03rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hamburger{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height:100vh;
+    width:350px;
+    z-index:999;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    background-color:rgba(255, 255, 255, 0.201);
+    position:fixed;
+    top:0;
+    right:0;
+    h3{
+        color:rgb(206, 10, 10);
+    }
+    ul{
+        list-style-type: none;
+        background-color: transparent;
+    }
+    .link{
+        text-decoration: none;
+        color: red;
+        font-size:1.2rem;
+        display:block;
+        width:100%;
+        padding:10px 15px;
+        background-color: transparent;
+    }
+    .link:hover{
+        color:rgb(175, 6, 6);
+        background-color: rgba(255, 99, 71, 0.7);
+        width: 100%;
+    }
+    img,h3{
+        background-color: transparent;
+    }
+
+}
+
+.hamburger li{
+    width:100%;
+    background-color: transparent;
+}
+
+.hamburger img{
+    width:25%;
+    height:15%;
+
+}
+
+.menu{
+    display:none;
+}
+
+@media(max-width:800px){
+    .nav_button{
+        display:none;
+    }
+    .menu{
+        display:block;
+    }
+}
+@media(max-width:400px){
+    .hamburger{
+        width:100%;
+    }
+}
+
+#header{
+    position: sticky;
+    top:0;
+}
+
+#back{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom:5px;
+    background-color: transparent;
+}
+
+#back button:hover{
+    background-color: rgb(206, 10, 10);
+    transition: 0.2s;
+    a{
+        color:white;
+        background-color: rgb(206, 10, 10);
+        transition:0.2s;
+    }
+}
+
+.back{
+    align-self: center;
+    padding:0px;
+    border:3px solid rgb(206, 10, 10);
+    margin:0px;
+    position: sticky;
+    bottom:0;
+    color:rgb(206, 10, 10);
+    transition:0.2s;
+    background-color: white;
+    a{
+        text-decoration: none;
+        background-color: transparent;
+        color: rgb(206, 10, 10);
+        transition:0.2s;
+    }
+    border-radius:20px;
+    padding: 3px; 
+
+}
+
+
+#nav a{
+    text-decoration: none;
+}
+
+#nav button{
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+#nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-bar button{
+    border : 2px solid red;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    padding:6px;
+    transition:0.3s;
+}
+
+.search-bar button:hover{
+    background-color: red;
+    #sb{
+        background-color: red;
+        color: white;
+        transition: 0.3s;
+         ;
+    }
+}
+
+#sb{
+    background-color: white;
+    color: red;
+    width: fit-content;
+    height: fit-content;
+    padding:5px;
+    transition: 0.3s;
+}
+
+.search-bar input{
+    border : 0;
+    width:90%;
+    background-color: transparent;
+    outline: none;
+    font-size: 17px;
+}
+.search-bar{
+    border : 2px solid;
+    border-radius: 60px;
+    padding : 10px 20px;
+    display : flex;
+    justify-content: space-between;
+    width:100%;
+    background-color: rgba(255,255,255,0.2);
+    max-width : 700px;
+    
+}
+.sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: right;
+    width: 30%;
+}
+
+.nav_button{
+    margin:5px;
+    background-color: white;
+    transition:0.2s;
+}
+
+.nav_button a{
+    color: red;
+    background-color: white;
+    transition: 0.2s;
+
+}
+
+#nav button:hover{
+    background-color: red;
+    transition: 0.2s;
+    a{
+        background-color: red;
+        color:white;
+        transition: 0.2s;
+    }
+
+}
+
+#nav h3{
+    color: rgb(206, 10, 10);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo img{
+    width : 60px;
+    height : 60px;
+    margin:0px 5px 0px 0px;
+}
+.logo{
+    display: flex;
+
+}
+
+.place{
+    align-self: center;
+    color: red;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+footer{
+    display:flex;
+
+}
+footer img{
+    width : 100px;
+    height : 100px;
+}
+
+.follow{
+    margin:0px 0px 2px 0px;
+}
+
+.tnc{
+    display: flex;
+    flex-direction: column;
+}
+
+.comp_name{
+    margin: 0px ;
+    color: rgb(206, 10, 10);
+}
+
+.brand{
+    display: flex;
+    flex-direction: column;
+    margin:0px 0px 0px 20px;
+}
+footer a{
+    text-decoration: none;
+    color: red;
+}
+#about h1,h4{
+    color:red;
+}
+
+.tnc a:hover{
+    color:rgb(128, 24, 24);
+}
+
+/*Styling for the elements invoked through JavaScript*/
+
+.card-container{
+    display:flex;
+    justify-content: space-around;
+}
+
+.hourly{
+    display:flex;
+    flex-wrap: wrap;
+    margin:30px 10px;
+}
+
+.hr{
+    border:2px solid red;
+    background-color: red;
+    color: white;
+    border-radius:10px;
+    padding: 9px;
+    margin :5px;
+
+}
+
+.hr p{
+    color: white;
+}
+
+.daily{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dl{
+    border: 2px solid red;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.condition,.vapour-details,.temp-wind{
+    display:flex;
+    flex-direction: column;
+    border:2px solid red;
+    border-radius : 10px;
+    padding : 10px;
+    background-color: white
+    
+}
+
+.l_u{
+    text-align: center;
+    font-size: 0.9rem;
+    margin:0px 10px 10px 10px;
+}
+
+.card{
+    background-color: red;
+    border-radius: 50px;
+    padding:15px;
+    color:white
+}
+
+.w_img{
+    width:150px;
+    height:150px;
+}

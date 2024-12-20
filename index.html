@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="dummy"></div> <!--  Dummy division to navigate to top  -->
+    <header id="header">
+    <!--  Navbar  -->
+    <nav id="nav">
+        <div class="logo">
+            <img src="prob_logo_1.jpg" />
+            <h3>Weather Whiz</h3>
+        </div>
+        <div class="sections">
+            <button class="nav_button"><a href="#about">About Us</a></button>
+            <button class="nav_button"><a href="#footer">More Info</a></button>
+            <a class="menu" href="#"><svg class="menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </div>
+    </nav>
+    </header>
+    <div class="hamburger">
+        <ul >
+            <li class="close" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li>
+                <img src="prob_logo_1-removebg-preview.png" />
+                <h3>Weather Whiz</h3>
+            </li>
+            <li>
+                <a class="link" href="#about">About Us</a>
+            </li>
+            <li>
+                <a class="link" href="#footer">More Info</a>
+            </li>
+        </ul> 
+    </div>
+    <!--  Search Bar  -->
+    <form id="form" class="form">
+        <div class="search-bar">   
+            <input id="search" placeholder="Search any city" name="seach-bar" type="text">
+            <button id="btn" type="submit"><i id="sb" class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    </form>
+    <hr/>
+    <!--  Weather Data  -->
+    <div id="forecast">
+        <main>
+            <h2 class="place"></h2>
+            <p class="l_u"></p>
+        </main>
+    </div>
+    <hr/>
+    <!--  About Section  -->
+    <div  id="about">
+        <h1 style="font-size:1.2rem;">About Us</h1>
+        <p style="font-size:1.2rem;">
+             Welcome to WeatherWhiz, your trusted source for accurate, up-to-date weather information. Whether you're planning your day, checking for storms, or tracking temperatures, we're here to provide you with reliable weather forecasts at your fingertips.
+            <br/>
+             Our mission is simple: to help you make informed decisions based on the latest weather data. We offer real-time weather reports, detailed forecasts, and easy-to-understand insights, all powered by advanced meteorological tools. With WeatherWhiz, you can stay ahead of the weather, no matter where you are.
+        </p>
+        <h4 style="font-size:1.2rem;">What we offer:</h4>
+         <ul >
+             <li style="font-size:1.2rem;">Real-Time Weather Updates: Get accurate, up-to-the-minute weather data for your location and around the world.</li>
+             <li style="font-size:1.2rem;">Detailed Forecasts: Hourly, daily, and weekly forecasts to help you plan ahead with confidence.</li>
+             <li style="font-size:1.2rem;">User-Friendly Interface: An intuitive design that makes it easy to access the information you need.</li>
+        </ul>
+    </div>
+    <hr/>
+    <!--  Footer  -->
+    <footer id="footer">
+        <div class="img">
+            <img src="prob_logo_1.jpg" />
+            <h2 class="comp_name">Weather Whiz</h2>
+        </div>
+        <div class="brand">
+            <div class="icons">
+                <h4 class="follow">Follow us on</h4>
+                <a style="color:black" href="https://github.com/rupesh-github01"><i class="fa-brands fa-github"></i></a>
+                <a style="color:black" href="https://www.linkedin.com/in/rupesh-vinayak-70a318314/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="tnc">
+                <a href="index.html">Terms and Conditions</a>
+                <a href="index.html">Privacy Policy</a>
+                <a href="index.html">Copyrights</a>
+            </div>
+        </div> 
+    </footer>
+    <div id="back"><button class="back"><a href="#dummy">Back To Top</a></button></div>
+    <script src="script.js"></script>
+</body>
+</html>
