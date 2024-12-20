@@ -147,7 +147,7 @@ function weatherDetails(data) {
 }
 
 // Calling API for default city (Kharagpur)
-const URL = "http://api.weatherapi.com/v1/forecast.json?key=b6869e591d9f4de5a8652023242012&q=Kharagpur&days=8&aqi=yes&alerts=no";
+const URL = "https://api.weatherapi.com/v1/forecast.json?key=b6869e591d9f4de5a8652023242012&q=Kharagpur&days=8&aqi=yes&alerts=no";
 
 const getData = async () => {
     try {
@@ -164,7 +164,7 @@ const btn = document.querySelector("#btn");
 btn.addEventListener("click", (evt) => {
     evt.preventDefault();
     let city = document.querySelector("#search").value;
-    let newURL = `http://api.weatherapi.com/v1/forecast.json?key=b6869e591d9f4de5a8652023242012&q=${city}&days=8&aqi=yes&alerts=no`;
+    let newURL = `https://api.weatherapi.com/v1/forecast.json?key=b6869e591d9f4de5a8652023242012&q=${city}&days=8&aqi=yes&alerts=no`;
 
     const getNewData = async () => {
         try {
